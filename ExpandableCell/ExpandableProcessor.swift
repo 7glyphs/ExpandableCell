@@ -6,7 +6,8 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-#if canImport(UIKit)
+#if os(iOS)
+import UIKit
 
 struct ExpandableData {
     var indexPath: IndexPath

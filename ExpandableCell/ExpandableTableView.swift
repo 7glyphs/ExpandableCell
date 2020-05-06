@@ -6,7 +6,8 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-#if canImport(UIKit)
+#if os(iOS)
+import UIKit
 
 open class ExpandableTableView: UITableView {
     public var animation: UITableView.RowAnimation = .top
