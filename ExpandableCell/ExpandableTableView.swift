@@ -6,7 +6,7 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-import UIKit
+#if canImport(UIKit)
 
 open class ExpandableTableView: UITableView {
     public var animation: UITableView.RowAnimation = .top
@@ -427,3 +427,4 @@ extension ExpandableTableView {
         return delegate.expandableTableView(self, didUnhighlightRowAt: indexPath)
     }
 }
+#endif

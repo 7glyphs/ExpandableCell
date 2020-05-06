@@ -6,7 +6,7 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-import UIKit
+#if canImport(UIKit)
 
 struct ExpandableData {
     var indexPath: IndexPath
@@ -249,3 +249,4 @@ class ExpandableProcessor {
         return IndexPath(row: indexPath.row - count, section: indexPath.section)
     }
 }
+#endif

@@ -6,7 +6,7 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-import UIKit
+#if canImport(UIKit)
 
 open class ExpandableCell: UITableViewCell {
     open var arrowImageView: UIImageView!
@@ -86,3 +86,4 @@ public enum HighlightAnimation {
     case animated
     case none
 }
+#endif

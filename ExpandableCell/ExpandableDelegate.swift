@@ -6,7 +6,7 @@
 //  Copyright © 2017년 SeungyounYi. All rights reserved.
 //
 
-import UIKit
+#if canImport(UIKit)
 
 public protocol ExpandableDelegate: UIScrollViewDelegate {
 
@@ -100,3 +100,4 @@ public extension ExpandableDelegate {
     func expandableTableView(_ expandableTableView: UITableView, didUnhighlightRowAt indexPath: IndexPath) { }
     func expandableTableView(_ expandableTableView: UITableView, didCloseRowAt indexPath: IndexPath) { }
 }
+#endif
